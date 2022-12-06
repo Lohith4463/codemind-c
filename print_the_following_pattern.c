@@ -1,18 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    int i, j, rows;
+    scanf("%d", &rows);
+    for(i=1; i<=rows; i++)
     {
-        for(int j=1;j<=n;j++)
+        for(j=1; j<=rows-i; j++)
         {
-            if(i==j || j==(n+1)-i)
-            printf("x");
+            printf(" ");
+        }
+        for(j=1; j<=rows; j++)
+        {
+            if(i==1 || i==rows || j==1 || j==rows)
+                printf("*");
             else
-            printf("0");
+                printf(" ");
         }
         printf("
 ");
     }
+    return 0;
 }
