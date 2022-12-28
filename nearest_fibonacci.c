@@ -10,15 +10,9 @@ int main()
         b=c;
     }
     if(n-a<b-n)
-    {
-        printf("%d ",a);
-    }
+    printf("%d",a);
     else if(n-a==b-n)
-    {
-        printf("%d %d",a,b);
-    }
+    printf("%d %d",a,b);
     else
-    {
-        printf("%d ",b);
-    }
+    printf("%d",b);
 }
