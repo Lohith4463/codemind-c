@@ -8,15 +8,18 @@ int main()
         scanf("%d",&x);
         if(x<3)
         {
-            printf("LIGHT");
+            printf("LIGHT
+");
         }
         else if(x>=3 && x<7)
         {
-            printf("MODERATE");
+            printf("MODERATE
+");
         }
         else if(x>=7)   
         {
-            printf("HEAVY");
+            printf("HEAVY
+");
         }
         t--;
     }
